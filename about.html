@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Airbnb listings example</title>
+        <link rel="icon" href="./favicon.png" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+     <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+      <style>
+    .aboutPage {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .aboutPage h2 {
+      margin-top: 30px;
+    }
+    .aboutPhotos {
+  margin-top: 40px;
+}
+
+#aboutCarousel {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+#aboutCarousel img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+  </style>
+  </head>
+
+  <body>
+   <header class="siteHeader">
+  <h1>About Boston Airbnb Listings</h1>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="aboutPage">
+  <section>
+    <h2>About This Project</h2>
+
+    <p>
+      This project was created as part of a web development assignment focused
+      on loading and displaying data dynamically with JavaScript.
+    </p>
+
+    <p>
+      The goal was to display the first 50 Airbnb listings from a JSON file
+      using the Fetch API and async/await. Each listing includes information
+      such as the property name, description, amenities, host information,
+      price, and images.
+    </p>
+
+    <h2>How It Was Built</h2>
+
+    <p>
+      The original dataset was obtained from Inside Airbnb for the Boston area.
+      The data was provided as a CSV file, so it was converted into a smaller
+      JSON file containing the first 50 listings and only the fields needed
+      for this project.
+    </p>
+
+    <p>
+      JavaScript fetches the JSON file and dynamically creates each listing
+      card in the page. Additional features were added, including ratings,
+      review counts, links to the Airbnb listing and host profile, and
+      responsive styling for different screen sizes.
+    </p>
+  </section>
+
+  <section>
+  <h2>About Me</h2>
+
+  <p>
+    I'm originally from Mexico, currently pursuing a Master's in Computer Science
+    (AI/ML concentration) at Northeastern University. Before that, I spent several
+    years at Auronix, working my way up from IT Operations Engineer to Infrastructure
+    and IT Operations Manager.
+  </p>
+
+  <p>
+    When I'm not coding, you'll find me out hiking or planning the next trip —
+    always with Nixie, my Yorkshire terrier, who insists on tagging along everywhere
+    (yes, even places she probably shouldn't).
+  </p>
+</section>
+
+<section class="aboutPhotos">
+<h4>Because some things are better told with pictures...</h4>
+
+  <div
+    id="aboutCarousel"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img
+          src="./images/about1.jpg"
+          class="d-block w-100"
+          alt="Travel photo"
+        >
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="./images/about2.jpg"
+          class="d-block w-100"
+          alt="Hiking photo"
+        >
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="./images/about3.jpg"
+          class="d-block w-100"
+          alt="Photo with Nixie"
+        >
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="./images/about4.jpg"
+          class="d-block w-100"
+          alt="Travel photo"
+        >
+      </div>
+      <div class="carousel-item">
+        <img
+          src="./images/about5.jpg"
+          class="d-block w-100"
+          alt="Travel photo"
+        >
+      </div>
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#aboutCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#aboutCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+</main>
+
+ <footer>
+      <p>Made by Alejandra Rivas, follow me on </p>
+         <a href="https://www.instagram.com/rivaimee/"><img
+              class="insta"
+              src="insta.png"
+              alt="Image of Instagram logo"
+            /></a>
+      
+    </footer>
+    <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+  </body>
+</html>
