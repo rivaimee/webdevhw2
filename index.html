@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The basics you need to know to have your first HTML page"
+    />
+
+    <title>HTML Basic Concepts</title>
+  </head>
+
+  <body id="top">
+    <nav>
+      <a href="#tenimportanttags">Important HTML Tags</a>
+      <a href="#boxmodel">The Box Model</a>
+      <a href="#grid3x3">Grid 3x3</a>
+      <a href="#itemizedlist">Font Sizes</a>
+      <a href="#positioning">CSS Positioning</a>
+    </nav>
+
+    <main>
+      <h1>HTML Basic Concepts</h1>
+
+      <!-- IMPORTANT HTML TAGS -->
+      <section id="tenimportanttags">
+        <h2>Important Tags in HTML</h2>
+
+        <h3>Important Tags for SEO</h3>
+
+        <p>
+          <strong>SEO</strong> (Search Engine Optimization) is the process of
+          improving a webpage so search engines can better understand its
+          content and show it in relevant search results.
+          <br />
+          Using the right tags is important because they provide information
+          about the page, such as its title, description, and how search
+          engines should treat it.
+        </p>
+
+        <ul>
+          <li>
+            <strong>&lt;title&gt;</strong> - Defines the page title shown in
+            search results.
+          </li>
+
+          <li>
+            <strong>&lt;meta name="description"&gt;</strong> - Provides a short
+            description of the page.
+          </li>
+
+          <li>
+            <strong>&lt;meta name="robots"&gt;</strong> - Gives instructions to
+            search engine crawlers.
+          </li>
+
+          <li>
+            <strong>&lt;link rel="canonical"&gt;</strong> - Identifies the
+            preferred URL for a page.
+          </li>
+        </ul>
+
+        <h3>10 Important Tags for HTML</h3>
+
+        <p>
+          HTML tags are the basic building blocks of a webpage.
+          <br />
+          They tell the browser what each piece of content represents, such as
+          a heading, paragraph, image, link, or section.
+          <br />
+          Using the right tags also helps organize the page and makes the
+          structure easier to understand.
+        </p>
+
+        <p>The 10 most important HTML tags for me are:</p>
+
+        <ul>
+          <li>
+            <strong>&lt;a&gt;</strong> - Creates hyperlinks to other pages,
+            sections, files, or external websites.
+          </li>
+
+          <li>
+            <strong>&lt;p&gt;</strong> - Defines a paragraph of text.
+          </li>
+
+          <li>
+            <strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Define headings with
+            different levels of importance, from the main heading to smaller
+            subheadings.
+          </li>
+
+          <li>
+            <strong>&lt;section&gt;</strong> - Groups related content into a
+            meaningful section of the page.
+          </li>
+
+          <li>
+            <strong>&lt;img&gt;</strong> - Displays an image on the webpage and
+            can include alternative text for accessibility.
+          </li>
+
+          <li>
+            <strong>&lt;meta&gt;</strong> - Provides information about the
+            webpage, such as its description, character encoding, or viewport
+            settings.
+          </li>
+
+          <li>
+            <strong>&lt;main&gt;</strong> - Identifies the main and unique
+            content of the webpage.
+          </li>
+
+          <li>
+            <strong>&lt;title&gt;</strong> - Defines the title of the webpage
+            shown in the browser tab and used by search engines.
+          </li>
+
+          <li>
+            <strong>&lt;div&gt;</strong> - Creates a general block-level
+            container used to group and organize elements.
+          </li>
+
+          <li>
+            <strong>&lt;span&gt;</strong> - Creates an inline container used to
+            group or style small parts of text or other inline content.
+          </li>
+        </ul>
+      </section>
+
+      <!-- BOX MODEL -->
+      <section id="boxmodel">
+        <h2>The Box Model</h2>
+
+        <p>
+          The CSS Box Model describes how every HTML element is represented as
+          a rectangular box.
+          <br />
+          It is composed of the content, padding, border, and margin.
+          <br />
+          Understanding these parts is important because they control the size
+          of an element and the space inside and around it.
+        </p>
+
+        <p>
+          Here is an example of how the Box Model can be shown. We use
+          variations of margin, padding, and border.
+        </p>
+
+        <h3>BORDER</h3>
+
+        <p>First, we change only the border.</p>
+
+        <p>
+          Border is the visible line that surrounds an element's content and
+          padding. Its thickness, style, and color can be customized.
+        </p>
+
+        <div>
+          <span>
+            0px
+            <img
+              class="border0"
+              src="nixie.jpg"
+              alt="Image of Nixie with a 0px border"
+            />
+          </span>
+
+          <span>
+            5px
+            <img
+              class="border5"
+              src="nixie.jpg"
+              alt="Image of Nixie with a 5px border"
+            />
+          </span>
+
+          <span>
+            10px
+            <img
+              class="border10"
+              src="nixie.jpg"
+              alt="Image of Nixie with a 10px border"
+            />
+          </span>
+        </div>
+
+        <h3>MARGIN</h3>
+
+        <p>Now we change the margin.</p>
+
+        <p>
+          Margin is the transparent space outside an element's border. It
+          controls the distance between that element and nearby elements.
+        </p>
+
+        <div>
+          <span class="margin-container">
+            0px
+            <img
+              class="margin0"
+              src="nixie.jpg"
+              alt="Image of Nixie with a 0px margin"
+            />
+          </span>
+
+          <span class="margin-container">
+            5px
+            <img
+              class="margin5"
+              src="nixie.jpg"
+              alt="Image of Nixie with a 5px margin"
+            />
+          </span>
+
+          <span class="margin-container">
+            10px
+            <img
+              class="margin10"
+              src="nixie.jpg"
+              alt="Image of Nixie with a 10px margin"
+            />
+          </span>
+        </div>
+
+        <h3>PADDING</h3>
+
+        <p>Finally, we change the padding.</p>
+
+        <p>
+          Padding is the transparent space between an element's content and its
+          border. It gives the content more room inside the element.
+        </p>
+
+        <div>
+          <span>
+            0px
+            <img
+              class="padding0"
+              src="nixie.jpg"
+              alt="Image of Nixie with 0px padding"
+            />
+          </span>
+
+          <span>
+            5px
+            <img
+              class="padding5"
+              src="nixie.jpg"
+              alt="Image of Nixie with 5px padding"
+            />
+          </span>
+
+          <span>
+            10px
+            <img
+              class="padding10"
+              src="nixie.jpg"
+              alt="Image of Nixie with 10px padding"
+            />
+          </span>
+        </div>
+      </section>
+
+      <!-- 3x3 GRID WITHOUT CSS -->
+      <section id="grid3x3">
+        <h2>Grid 3x3 Without CSS</h2>
+
+        <p>
+          A grid-like layout can be created in plain HTML by combining block
+          elements such as &lt;div&gt; with inline elements such as
+          &lt;span&gt;.
+          <br />
+          This approach is useful for understanding how HTML elements naturally
+          behave, but in real projects CSS Grid or Flexbox is usually preferred
+          because they provide better control over alignment, spacing, and
+          responsive layouts.
+        </p>
+
+        <div>
+          <span>Item 1 |</span>
+          <span>Item 2 |</span>
+          <span>Item 3</span>
+        </div>
+
+        <div>
+          <span>Item 4 |</span>
+          <span>Item 5 |</span>
+          <span>Item 6</span>
+        </div>
+
+        <div>
+          <span>Item 7 |</span>
+          <span>Item 8 |</span>
+          <span>Item 9</span>
+        </div>
+
+        <p>
+          This layout was created using divs and spans to form a 3x3 grid-like
+          structure.
+        </p>
+      </section>
+
+      <!-- FONT SIZE EXAMPLES -->
+      <section id="itemizedlist">
+        <h2>Itemized List with Different Font Sizes</h2>
+
+        <p>
+          CSS provides different units to control font size. Some units are
+          <strong>absolute</strong>, while others are
+          <strong>relative</strong>. The following examples use exactly the
+          same text so we can compare how each unit changes its size.
+        </p>
+
+        <ul style="font-size: 20px">
+          <li style="font-size: 16px">Nixie is the best dog</li>
+          <li style="font-size: 1.5em">Nixie is the best dog</li>
+          <li style="font-size: 1.5rem">Nixie is the best dog</li>
+          <li style="font-size: 18pt">Nixie is the best dog</li>
+          <li style="font-size: 150%">Nixie is the best dog</li>
+          <li style="font-size: 2vw">Nixie is the best dog</li>
+        </ul>
+
+        <h3>Understanding the Examples</h3>
+
+        <ol>
+          <li>
+            <strong>16px:</strong> This example uses an absolute size. The text
+            is displayed at 16 pixels regardless of the font size defined in
+            its parent.
+          </li>
+
+          <li>
+            <strong>1.5em:</strong> This is relative to the inherited font size.
+            In this example, the parent list has a font size of 20px, so 1.5em
+            becomes 30px (20 × 1.5).
+          </li>
+
+          <li>
+            <strong>1.5rem:</strong> This is relative to the root font size of
+            the page, not to the parent element. If the root font size is 16px,
+            1.5rem is approximately 24px.
+          </li>
+
+          <li>
+            <strong>18pt:</strong> Points are an absolute unit commonly
+            associated with printed documents, where a predictable size is
+            useful.
+          </li>
+
+          <li>
+            <strong>150%:</strong> A percentage is relative to the inherited
+            font size. With a parent size of 20px, 150% produces a font size of
+            30px.
+          </li>
+
+          <li>
+            <strong>2vw:</strong> This unit is relative to the width of the
+            browser window. The font size changes when the viewport becomes
+            wider or narrower.
+          </li>
+        </ol>
+      </section>
+
+      <!-- CSS POSITIONING -->
+      <section id="positioning">
+        <h2>CSS Positioning</h2>
+
+        <p>
+          CSS positioning controls where elements appear on a webpage and how
+          they behave in relation to other elements or the browser window.
+          Different positioning options are useful for normal content flow,
+          small adjustments, placing elements inside containers, or keeping
+          elements visible while scrolling.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Static:</strong> This is the default position. The element
+            stays in the normal flow of the page and is placed where the HTML
+            structure defines it.
+          </li>
+
+          <li>
+            <strong>Relative:</strong> The element keeps its original space in
+            the page, but it can be moved from that position using properties
+            such as top, right, bottom, or left.
+          </li>
+
+          <li>
+            <strong>Absolute:</strong> The element is removed from the normal
+            document flow and is positioned relative to its nearest positioned
+            ancestor. Because it no longer reserves its original space, it can
+            overlap other elements.
+          </li>
+
+          <li>
+            <strong>Fixed:</strong> The element is positioned relative to the
+            browser window and stays in the same place even when the user
+            scrolls. It can also overlap other content because it is removed
+            from the normal document flow. On this page, fixed positioning is
+            used for the "Back to top" button so it remains visible while
+            navigating through the page.
+          </li>
+        </ul>
+
+        <div class="position-container">
+          <div class="static-example">
+            Static: normal page content that does not need special positioning.
+          </div>
+
+          <div class="relative-example">
+            Relative: an element that needs a small adjustment from its
+            original position.
+          </div>
+
+          <div class="absolute-example">
+            Absolute: an element placed in a specific position inside a
+            container.
+          </div>
+
+          <a class="fixed-example" href="#top">Back to top</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>I'm Alejandra Rivas. Follow me on</p>
+
+      <a href="https://www.instagram.com/rivaimee/">
+        <img class="insta" src="insta.png" alt="Instagram logo" />
+      </a>
+    </footer>
+  </body>
+</html>

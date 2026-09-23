@@ -1,0 +1,178 @@
+/* NAVIGATION */
+
+nav {
+  background-color: #222;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 8px 12px;
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+
+/* HEADINGS */
+
+h1 {
+  color: rgb(26, 65, 119);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(40, 96, 180);
+}
+
+
+/* BOX MODEL */
+
+#boxmodel img {
+  width: 120px;
+  height: auto;
+}
+
+.border0 {
+  border: 0 solid black;
+}
+
+.border5 {
+  border: 5px solid black;
+}
+
+.border10 {
+  border: 10px solid black;
+}
+
+.margin0,
+.margin5,
+.margin10,
+.padding0,
+.padding5,
+.padding10 {
+  border: 1px solid black;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.margin5 {
+  margin: 5px;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.margin-container {
+  display: inline-block;
+  border: 1px dashed gray;
+}
+
+
+/* POSITIONING EXAMPLES */
+
+.position-container {
+  position: relative;
+  border: 1px dashed black;
+  min-height: 150px;
+}
+
+.static-example {
+  position: static;
+}
+
+.relative-example {
+  position: relative;
+  left: 20px;
+}
+
+.absolute-example {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.fixed-example {
+  position: fixed;
+  right: 10px;
+  top: 50px;
+
+  padding: 8px 12px;
+
+  background-color: rgb(26, 65, 119);
+  color: white;
+
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.static-example,
+.relative-example,
+.absolute-example {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: rgb(40, 96, 180);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-family: Georgia, serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.insta {
+  border: 0;
+  width: 30px;
+  height: auto;
+}
+
+
+/* SPACE FOR FIXED FOOTER */
+
+main {
+  padding-bottom: 80px;
+}
