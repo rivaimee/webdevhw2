@@ -1,0 +1,129 @@
+body {
+  margin: 10px;
+  background: rgb(250, 250, 250);
+    padding-bottom: 50px;
+}
+
+.listing {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.listing:hover {
+  border-color: rgb(179, 18, 18);
+
+  transform: rotate(5deg);
+}
+
+.listingsGroup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.listingImage {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+    border-radius: 6px;
+}
+
+.hostImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hostInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rating {
+  font-weight: bold;
+}
+
+.listingLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: rgb(40, 96, 180);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-family: Georgia, serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.insta {
+  border: 0;
+  width: 30px;
+  height: auto;
+}
+
+
+/* SPACE FOR FIXED FOOTER */
+
+
+
+.siteHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 50px;
+  background-color: rgb(40, 96, 180);
+}
+
+.siteHeader h1 {
+  margin: 0;
+  color: white;
+}
+
+.siteHeader nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.siteHeader nav a {
+  color: white;
+  text-decoration: none;
+}
